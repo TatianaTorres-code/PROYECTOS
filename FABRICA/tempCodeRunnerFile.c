@@ -11,7 +11,7 @@ int esNombreValido(char *nombre) {
         if (esDigito(nombre[i])) return 0;
     }
     return 1;
-}   
+}
 
 int leerEnteroPositivo(char *mensaje) {
     int valor;
@@ -55,7 +55,7 @@ int main() {
 
     do {
         printf("\n--- Menu ---\n");
-        printf("1. Agregar producto a fabricar\n");
+        printf("1. Agregar producto\n");
         printf("2. Editar producto\n");
         printf("3. Eliminar producto\n");
         printf("4. Mostrar productos\n");
@@ -220,8 +220,6 @@ int main() {
             if (!alMenosUno)
             {
                 printf("\nNo se puede producir ningun producto completamente.\n");
-                printf("\nSeleccione opcion 6 para agregar stock de componentes o\n");
-                printf("\nSeleccione opcion 2 para editar el producto a fabricar \n");
             }
 
             printf("\nResumen final:\n");
